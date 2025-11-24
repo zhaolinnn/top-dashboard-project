@@ -1,0 +1,32 @@
+.container {
+    display: inline-grid;
+    grid-template: 500px 500px / 200px 900px;
+    
+
+}
+
+.sidebar {
+    grid-row: 1 / -1;
+    background-color: rgb(62, 164, 228);
+    color: white;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+/* real meat */
+
+.dashboard {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 600px 300px;
+    grid-template-rows: 50px 200px 200px 200px; 
+    row-gap: 20px;
+}
+
+
+
