@@ -1,7 +1,11 @@
+html, body {
+    height: 100%;
+    margin: 0; /* remove default body margin so 100vh matches viewport */
+}
+
 .container {
     display: inline-grid;
-    grid-template: 500px 500px / 200px 900px;
-    
+    grid-template: 100vh / 200px 1000px;
 
 }
 
@@ -13,20 +17,69 @@
 
 .right {
     display: flex;
+    min-height: 100vh;
     flex-direction: column;
-    padding-left: 30px;
     padding-top: 10px;
+    
 }
 
 /* real meat */
 
 .dashboard {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    gap: 20px;
     padding-top: 30px;
+    padding-left: 30px;
+    
+    background-color: #e2e8f0;
+}
+
+.toolbar {
+    padding-left: 30px;
+}
+
+.lower {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.projects {
     display: grid;
-    grid-template-columns: 600px 300px;
-    grid-template-rows: 50px 200px 200px 200px; 
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 20px 175px 175px 175px;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.projectsquare {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.projectlabel {
+    grid-column: 1 / span 2;
+    background-color: #e2e8f0;
+}
+
+.projectsquare > * {
+    font-size: 12px;
+}
+
+.dashboardRight {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 20px 200px 200px;
     row-gap: 20px;
 }
 
+.announcementsquare {
+    background-color: #ffffff;
 
+}
 
+.announcementsquare {
+    font-size: 8px;
+}
