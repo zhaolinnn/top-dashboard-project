@@ -3,6 +3,10 @@ html, body {
     margin: 0; /* remove default body margin so 100vh matches viewport */
 }
 
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .container {
     display: inline-grid;
     grid-template: 100vh / 200px 1000px;
@@ -13,6 +17,27 @@ html, body {
     grid-row: 1 / -1;
     background-color: rgb(62, 164, 228);
     color: white;
+    
+    
+}
+
+.sidebaricons {
+    display: grid;
+    padding-top: 15px;
+    padding-left: 20px;
+    grid-template-columns: 50px 100px;
+    grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px;
+    align-items: center;
+    row-gap: 10px;
+    font-weight: bold;
+}
+
+.whiteicon {
+    fill: white;
+}
+
+.dashboardlogo {
+    display: grid;
 }
 
 .right {
@@ -20,10 +45,13 @@ html, body {
     min-height: 100vh;
     flex-direction: column;
     padding-top: 10px;
-    
+
 }
 
 /* real meat */
+
+
+
 
 .dashboard {
     display: flex;
@@ -34,6 +62,16 @@ html, body {
     padding-left: 30px;
     
     background-color: #e2e8f0;
+}
+
+.dashboardlogo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 20px;
+    padding-top: 8px;
+    padding-left: 8px;
+    font-size: 22px;
 }
 
 .toolbar {
@@ -49,19 +87,33 @@ html, body {
 .projects {
     display: grid;
     grid-template-columns: 300px 300px;
-    grid-template-rows: 20px 175px 175px 175px;
+    grid-template-rows: 15px 175px 175px 175px;
     row-gap: 20px;
     column-gap: 20px;
 }
 
-.projectsquare {
+.projectsquare, .announcementsquare {
+    border-width: 6px;
+    border-bottom: #ffffff;
+    border-top: #ffffff;
+    border-right: #ffffff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
+    border-radius: 10px;
+    border-style: solid;
+    
+}
+
+.projectsquare {
+    border-left-color: gold;
     padding: 20px;
+
 }
 
 .projectlabel {
     grid-column: 1 / span 2;
     background-color: #e2e8f0;
+    font-weight: bold;
 }
 
 .projectsquare > * {
@@ -70,16 +122,20 @@ html, body {
 
 .dashboardRight {
     display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 20px 200px 200px;
+    grid-template-columns: 250px;
+    grid-template-rows: 15px 360px 200px;
     row-gap: 20px;
 }
 
 .announcementsquare {
     background-color: #ffffff;
-
+    font-size: 10.5px;
+    border-left-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
 }
 
-.announcementsquare {
-    font-size: 8px;
+.announcementlabel {
+    font-weight: bold;
 }
