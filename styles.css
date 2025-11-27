@@ -50,8 +50,11 @@ html, body {
 
 /* real meat */
 
-
-
+.upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .dashboard {
     display: flex;
@@ -76,9 +79,87 @@ html, body {
 
 .toolbar {
     padding-left: 30px;
+    padding-bottom: 18px;
+}
+
+.toolbarwelcome {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
 }
 
 .lower {
+    align-items: center;
+}
+
+.toolbarButtons {
+    display: flex;
+    gap: 20px;
+
+}
+
+.toolbarButtons > * {
+    background-color: rgb(62, 164, 228);
+    color: white;
+    border-top: rgb(62, 164, 228);
+    border-bottom: rgb(62, 164, 228);
+    border-left: rgb(62, 164, 228);
+    border-right: rgb(62, 164, 228);
+    border-radius: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: bold;
+}
+
+.searchbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#greeting {
+    font-size: 12px;
+}
+
+#name {
+    font-weight: bold;
+}
+
+#bigpfp {
+    height: 64px;
+    width: 64px;
+}
+
+.pfp {
+    width: 48px;
+    height: 48px;
+    border-radius: 32px;
+}
+
+.profileright {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    font-weight: bold;
+    
+}
+
+#input {
+    border-radius: 20px;
+    height: 28px;
+    border-color: #ffffff;
+    border-top: #ffffff;
+    border-left: #ffffff;
+    background-color: #e2e8f0;
+}
+
+.lower {
+    padding-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -139,3 +220,4 @@ html, body {
 .announcementlabel {
     font-weight: bold;
 }
+
